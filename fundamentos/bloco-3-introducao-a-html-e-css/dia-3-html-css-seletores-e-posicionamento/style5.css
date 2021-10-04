@@ -1,0 +1,49 @@
+ol {
+    background-color: yellow;
+}
+ol li:nth-child(even){
+    color: green;
+}
+ol li:nth-child(odd){
+    text-transform: uppercase;
+}
+.red-font {
+    color: red;
+}
+.italica {
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+ol li{
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+.blue-font {
+    color: blue;
+}
+.pink-back {
+    background-color: pink;
+}
+.stack a:hover {
+    font-weight: bold;
+    color: orange;
+}
+.w3 a:hover{
+    font-weight: bold;
+    color: green;
+}
+.mdn a:hover {
+    font-weight: bold;
+    color: black;
+}
+.devdocs a:hover{
+    color: yellow;
+}
+.trybe a:hover{
+    color: green;
+}
