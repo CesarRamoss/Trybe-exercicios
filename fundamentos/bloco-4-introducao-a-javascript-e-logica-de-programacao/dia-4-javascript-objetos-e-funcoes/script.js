@@ -104,7 +104,30 @@ qtdeCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
 
 /* 5 */
 function maisRepetido(arr) {
-  
+    // function highestCount(numeros) {
+    //     let repetidos =[]; //array para armazenar os valores repetidos
+    //     let maior; // variavel auxiliar para verificar o maior numero
+    //     let contador=0; //variavel para fazer a contagem de quantas vezes o numero se repete
+      
+    //     for(let i=0;i<numeros.length;i++){
+    //       if (numeros.indexOf(numeros[i]) != i){ //indexOf verifica a razao valor x indice e retorna false caso haja repeticao
+    //         repetidos.push(numeros[i]);
+    //       }
+    //     }
+    //     maior=repetidos[0]; //declaro o primeiro elemento como sendo maior
+    //     for(j=0;j<=repetidos.length;j++){   
+             
+    //       if(maior < repetidos[j]){  //verifica qual o maior elemento 
+    //         maior = repetidos[j];      
+    //       }
+      
+    //       if(maior == repetidos[j]){ //verifica o maior elemento quantas vezes aparece
+    //         contador+=1
+    //       }
+    //     } 
+    //     console.log(maior);
+    //     console.log(contador);
+    //   }
     
 }
 
