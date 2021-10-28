@@ -18,9 +18,9 @@
   
   .buttons-container {
     background-color: #eee;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    width: 100%;
+    /*width: 100%;*/
   }
   
   #days {
