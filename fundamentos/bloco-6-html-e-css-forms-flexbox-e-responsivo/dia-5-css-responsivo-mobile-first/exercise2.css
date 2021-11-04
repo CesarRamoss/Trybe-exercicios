@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  padding: 30px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: burlywood;
+  padding: 20px;
+}
+p {
+  margin-bottom: 5px;
+}
+header p {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  display: flex;
+  justify-content: space-around;
+}
+.aside-one,
+.aside-two {
+  margin: 30px;
+}
+
+footer {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 500px) {
+  header p {
+    font-size: 18px;
+  }
+  p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  h2,
+  h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  header p {
+    font-size: 23px;
+  }
+  p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  h2,
+  h1 {
+    font-size: 18px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+}
