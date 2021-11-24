@@ -1,4 +1,4 @@
-const { books, arrays, students } = require('./dados');
+const { books, arrays, students, names, grades } = require('./dados');
 
 //1
 function flatten() {
@@ -38,18 +38,19 @@ function longestNamedBook() {
 console.log(longestNamedBook());
 
 //5
-// function containsA() {
-//   const letterA = names.reduce((accA, name) => {
-//     const arrayLetters = name.split('');
-//     const n = arrayLetters.reduce((acc, letra) => {
-//       return (letra === 'A' || letra === 'a') ? acc++ : acc;
-//     }, 0)
-//   }, 0);
-//   return letterA;
-// }
-// console.log(containsA());
+function containsA() {
+  return names.reduce((acc, name) => acc + name.match(/A/gi).length, 0); //pra ele pesquisar pela letra A. O g quer dizer que é global (pesquisar em toda a string) e o i é pra ignorar o caseSensitive
+
+}
+console.log(containsA());
 
 //6
 function studentAverage() {
-  const newArray = students.map(())
+  const average = students.map((student, index) => ({
+    name: student,
+    average: (grades[index].reduce((acc, atual) => acc + atual, 0) / grades[index].length),
+  }));
+  return average;
 }
+
+console.log(studentAverage());
