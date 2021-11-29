@@ -1,3 +1,5 @@
+const { people, alex, gunnar } = require('./dados');
+
 //1
 const rectangleArea = (width, height) => width * height;
 
@@ -16,3 +18,13 @@ const sum = (...number) => number.reduce((acc, actual) => acc + actual, 0);
 console.log(sum(4, 7, 8, 9, 60, 2));
 
 //3
+const personLikes = ({ name, age, likes }) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+
+console.log(personLikes(alex)) // 'Alex is 26 years old and likes fly fishing.'
+console.log(personLikes(gunnar)) // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+
+//4
+const filterPeople = (arr) => arr.filter(({ nationality, bornIn }) => nationality === 'Australian' && bornIn > 1900 && bornIn <= 2000,);
+console.log(filterPeople(people));
+
+//5
